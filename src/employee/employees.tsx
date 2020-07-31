@@ -11,7 +11,7 @@ class Employees extends React.Component
     {
         return (
             <div>
-                Employees
+                All Employees
             </div>
         );
     }
