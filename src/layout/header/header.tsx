@@ -4,8 +4,8 @@ import Button from '@material-ui/core/Button';
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react'
+import SideMenu from '../side-menu/side-menu';
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -30,7 +30,7 @@ export default function Header()
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <MenuIcon/>
+                        <SideMenu/>
                     </IconButton>
                     <Typography variant="h6" className={classes.title}>
                         React Crud App

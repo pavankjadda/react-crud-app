@@ -10,9 +10,9 @@
   pointer-events: none;
 }
 
-#content
+.content
 {
-  height: 600px;
+  min-height: 650px;
 }
 
 @media (prefers-reduced-motion: no-preference)
