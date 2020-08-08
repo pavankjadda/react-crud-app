@@ -1,3 +1,4 @@
+
 .App
 {
   text-align: center;
@@ -7,6 +8,11 @@
 {
   height: 40vmin;
   pointer-events: none;
+}
+
+#content
+{
+  height: 600px;
 }
 
 @media (prefers-reduced-motion: no-preference)

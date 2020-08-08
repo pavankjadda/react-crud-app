@@ -1,6 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Link} from "react-router-dom";
-import Employees from '../employee/employees';
+import {BrowserRouter as Router} from "react-router-dom";
 
 class Home extends React.Component
 {
@@ -13,16 +12,7 @@ class Home extends React.Component
     {
         return (
             <Router>
-                <ol>
-                    <li>
-                        <Link to="/employees">
-                            <Employees/>
-                        </Link>
-                    </li>
-                    <li>Create New</li>
-                    <li>Employees</li>
-                    <li>Employees</li>
-                </ol>
+
             </Router>
         );
     }

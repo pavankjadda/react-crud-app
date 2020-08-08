@@ -1,21 +1,20 @@
+import {Grid} from '@material-ui/core';
 import React from 'react';
-import './App.css';
-import Home from './home/home';
-import logo from './logo.svg';
+import './App.scss';
+import Footer from './layout/footer/footer';
+import Header from './layout/header/header';
 
 function App()
 {
-  return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-            <p>
-                Home
-            </p>
-            <Home/>
-        </header>
-      </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Grid id="content">
+
+            </Grid>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
