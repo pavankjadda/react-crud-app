@@ -6,6 +6,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import React from 'react'
 import SideMenu from '../side-menu/side-menu';
+import "./header.scss";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
