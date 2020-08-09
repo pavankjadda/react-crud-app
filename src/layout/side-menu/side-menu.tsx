@@ -1,4 +1,3 @@
-import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
@@ -47,6 +46,7 @@ export default function SideMenu()
         setState({...state, [anchor]: open});
     };
 
+    //Defines Side Nav elements
     const list = (anchor: Anchor) => (
         <div className={clsx(classes.list, {
             [classes.fullList]: anchor === 'top' || anchor === 'bottom',
@@ -62,18 +62,10 @@ export default function SideMenu()
                     </ListItem>
                 ))}
             </List>
-            <Divider/>
-            <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>
-                        <ListItemText primary={text}/>
-                    </ListItem>
-                ))}
-            </List>
         </div>
     );
 
+    //Renders side-nav icon and onClick methods
     return (
         <div>
             {(['left'] as Anchor[]).map((anchor) => (
