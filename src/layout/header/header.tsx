@@ -1,4 +1,4 @@
-import {createStyles, IconButton, Theme} from '@material-ui/core';
+import {createStyles, Theme} from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar'
 import Button from '@material-ui/core/Button';
 import makeStyles from '@material-ui/core/styles/makeStyles';
@@ -29,9 +29,7 @@ export default function Header()
         <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                        <SideMenu/>
-                    </IconButton>
+                    <SideMenu/>
                     <Typography variant="h6" className={classes.title}>
                         React Crud App
                     </Typography>
