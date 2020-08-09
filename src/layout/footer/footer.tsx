@@ -7,11 +7,6 @@ import "./footer.scss";
 
 class Footer extends React.Component
 {
-    constructor(props: Readonly<{}>)
-    {
-        super(props);
-    }
-
     render()
     {
         return (
