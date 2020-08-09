@@ -48,9 +48,7 @@ export default function SideMenu()
 
     //Defines Side Nav elements
     const list = (anchor: Anchor) => (
-        <div className={clsx(classes.list, {
-            [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-        })}
+        <div className={clsx(classes.list, {[classes.fullList]: anchor === 'top' || anchor === 'bottom'})}
              role="presentation"
              onClick={toggleDrawer(anchor, false)}
              onKeyDown={toggleDrawer(anchor, false)}>
