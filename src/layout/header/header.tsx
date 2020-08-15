@@ -5,6 +5,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles';
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import React from 'react'
+import {Link} from 'react-router-dom';
 import SideMenu from '../side-menu/side-menu';
 import "./header.scss";
 
@@ -32,7 +33,7 @@ export default function Header()
                 <Toolbar>
                     <SideMenu/>
                     <Typography variant="h6" className={classes.title}>
-                        React Crud App
+                        <Link to={'/'}>React Crud App</Link>
                     </Typography>
                     <Button color="inherit">Login</Button>
                 </Toolbar>

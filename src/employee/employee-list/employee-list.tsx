@@ -7,10 +7,10 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import axios from 'axios';
 import React from 'react';
-import {BASE_URL, EMPLOYEE_API_URL} from '../constants/app.constants';
-import {Employee} from './employee';
+import {BASE_URL, EMPLOYEE_API_URL} from '../../constants/app.constants';
 
-export class EmployeeList extends React.Component
+
+export class EmployeeList extends React.Component<any, any>
 {
     componentDidMount()
     {
@@ -37,25 +37,23 @@ export class EmployeeList extends React.Component
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {this.state.employees.map(employee => (
-                            <TableRow key={employee.id}>
-                                <TableCell component="th" scope="row">
-                                    {employee.id}
-                                </TableCell>
-                                <TableCell align="right">{employee.firstName}</TableCell>
-                                <TableCell align="right">{employee.lastName}</TableCell>
-                                <TableCell align="right">{employee.email}</TableCell>
-                                <TableCell align="right">{employee.phone}</TableCell>
-                            </TableRow>
-                        ))}
+                        {this.state !== undefined && this.state !== null && this.state.employees !== undefined && this.state.employees !== null ?
+                            this.state.employees.map(employee => (
+                                <TableRow key={employee.id}>
+                                    <TableCell component="th" scope="row">
+                                        {employee.id}
+                                    </TableCell>
+                                    <TableCell align="right">{employee.firstName}</TableCell>
+                                    <TableCell align="right">{employee.lastName}</TableCell>
+                                    <TableCell align="right">{employee.email}</TableCell>
+                                    <TableCell align="right">{employee.phone}</TableCell>
+                                </TableRow>
+                            )) : ''
+                        }
                     </TableBody>
                 </Table>
             </TableContainer>
         );
-    }
-
-    state = {
-        employees: Employee[];
     }
 }
 

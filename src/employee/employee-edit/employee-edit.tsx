@@ -8,7 +8,7 @@ import TableRow from '@material-ui/core/TableRow';
 import React from 'react';
 
 
-export default class EmployeeCreate extends React.Component
+export default class EmployeeEdit extends React.Component
 {
     render()
     {
