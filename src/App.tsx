@@ -1,7 +1,7 @@
 import {Grid} from '@material-ui/core';
 import React from 'react';
 import './App.scss';
-import Employees from './employee/employees';
+import {EmployeeList} from './employee/employee-list';
 
 class App extends React.Component
 {
@@ -10,7 +10,7 @@ class App extends React.Component
         return (
             <div className="App">
                 <Grid id="content" className="content">
-                    <Employees/>
+                    <EmployeeList/>
                 </Grid>
             </div>
         );

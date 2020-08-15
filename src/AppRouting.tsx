@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import App from './App';
 import EmployeeCreate from './employee/employee-create';
-import Employees from './employee/employees';
+import Employees from './employee/employee-list';
 import Footer from './layout/footer/footer';
 import Header from './layout/header/header';
 
