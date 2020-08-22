@@ -10,7 +10,7 @@ class App extends React.Component
         return (
             <div className="App">
                 <Grid id="content" className="content">
-                    <EmployeeList employees={undefined}/>
+                    <EmployeeList/>
                 </Grid>
             </div>
         );

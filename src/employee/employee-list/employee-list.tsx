@@ -9,12 +9,26 @@ import axios from 'axios';
 import React from 'react';
 import {BASE_URL, EMPLOYEE_API_URL} from '../../constants/app.constants';
 
+export interface Employee
+{
+    id: number;
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+}
 
 export class EmployeeList extends React.Component<any, any>
 {
+    constructor(props)
+    {
+        super(props);
+        this.state = {employees: []}
+    }
+
     componentDidMount()
     {
-        axios.get(BASE_URL + EMPLOYEE_API_URL + 's')
+        axios.get(BASE_URL + EMPLOYEE_API_URL)
             .then(res =>
             {
                 let employees = res.data;

@@ -26,7 +26,7 @@ export default class AppRouting extends React.Component
                             <EmployeeEdit/>
                         </Route>
                         <Route path="/employee">
-                            <EmployeeList employees={undefined}/>
+                            <EmployeeList/>
                         </Route>
 
                     </Switch>
